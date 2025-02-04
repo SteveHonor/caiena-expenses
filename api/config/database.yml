@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  schema_search_path: "public,shared_extensions"
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: password
+  host: db
+
+development:
+  <<: *default
+  database: app_development
+
+test:
+  <<: *default
+  database: app_test
