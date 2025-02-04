@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".", // A baseURL é a raiz do projeto
+    "paths": {
+      "@/*": ["src/*"] // Alias '@' apontando para a pasta 'src'
+    }
+  },
+  "include": ["src/**/*"]
+}
